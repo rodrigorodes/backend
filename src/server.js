@@ -20,7 +20,7 @@ mongoose.connect('mongodb+srv://rods:rods@oministack-jztub.mongodb.net/aircnc?re
 var port = process.env.PORT || 3333;
 
 
-app.use(cors());
+app.use(cors({ origin: 'https://airfrontend.herokuapp.com' }));
 app.use(express.json());
 app.use('/files', express.static(path.resolve(__dirname, '..', 'uploads')));
 app.use(routes);
