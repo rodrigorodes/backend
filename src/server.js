@@ -26,5 +26,5 @@ app.use('/files', express.static(path.resolve(__dirname, '..', 'uploads')));
 app.use(routes);
 
 app.listen(port, function() {
-    console.log('Our app is running on http://localhost:' + port);
+    console.log('Our app is running on port: ' + port);
 });
